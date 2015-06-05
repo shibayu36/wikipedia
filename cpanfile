@@ -1,3 +1,3 @@
 requires "XML::LibXML";
-requires "Search::ElasticSearch";
+requires "Search::Elasticsearch";
 requires "JSON::Types";
