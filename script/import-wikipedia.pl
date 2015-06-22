@@ -30,7 +30,7 @@ for my $page ($xpc->findnodes('/wiki:mediawiki/wiki:page')) {
     my $title = $xpc->findvalue('./wiki:title', $page);
     my $text = $xpc->findvalue('./wiki:revision/wiki:text', $page);
 
-    $bulk_helper->create({
+    $bulk_helper->index({
         id => $id,
         source => {
             id    => $id,
